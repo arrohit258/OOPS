@@ -5,7 +5,7 @@ class Student{
 	protected:
 	int roll_number;
 };
-class Exam : public virtual Student{
+class Exam : public virtual Student{//virtual keyword to avoid clash on roll_number when being accessed in Result
 	protected:
 	int score;
 };
